@@ -69,7 +69,10 @@ def CRACK(combos):
                         break
                     elif Log == 'Blocked':
                         print('  {}ATTACKING{} ==>{} {}:{} {}=> {}Blocked IP!'.format(w, y, c, username, password, w, r))
-                        raw_input('  Change your IP Then continue...')
+                        try:
+                            raw_input('  Change your IP Then continue...')
+                        except:
+                            input('  Change your IP Then continue...')
                     elif Log == 'Oops':
                         print('  {}ATTACKING{} ==>{} {}:{} {}=> {}Oops, an error occurred. Trying again!'.format(w, y, c, username, password, w, y))
 
